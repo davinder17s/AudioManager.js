@@ -4,18 +4,18 @@ Simplest WebAudio library
 ##Properties
 ---
 
-| Property | Default | Possible values | Description
-|--|--|--|--|
-|this.context | AudioContext | AudioContext | Default AudioContext |
-|this.source | null | AudioSourceNode | Decoded audio source node, actual playable, filters applied |
-|this.arrayBuffer | null | AudioSourceNode | Decoded arrayBuffer from blob |
-| this.timer | 0 | (in seconds from where to start) | value must be less than duration | 
-| this.duration | length of buffer in seconds | length of buffer in seconds | read only property |
-| this.interval | 300 | milliseconds | rate, at which updated event must be fired |
-| this.lastUpdated | Date.now() | timestamp |  read only - when the last updated event was fired |
-| this.isPlaying | false |  | read only - tells if audio is playing or not |
-| this.isLoading | false |  | read only - it goes to true when library is loading/converting arraybuffer to audio data|
-| this.filters | {} | {} | this is indexed value object, you can store any filter you want here so, you can refer them in updated event |
+Property | Default | Possible values | Description
+--------|---------|----------|-----------
+context | AudioContext | AudioContext | Default AudioContext 
+source | null | AudioSourceNode | Decoded audio source node, actual playable, filters applied 
+arrayBuffer | null | AudioSourceNode | Decoded arrayBuffer from blob 
+timer | 0 | (in seconds from where to start) | value must be less than duration  
+duration | length of buffer in seconds | length of buffer in seconds | read only property 
+interval | 300 | milliseconds | rate, at which updated event must be fired 
+lastUpdated | Date.now() | timestamp |  read only - when the last updated event was fired 
+isPlaying | false |  | read only - tells if audio is playing or not 
+isLoading | false |  | read only - it goes to true when library is loading/converting arraybuffer to audio data
+filters | {} | {} | this is indexed value object, you can store any filter you want here so, you can refer them in updated event 
 
 ##Events
 ---
