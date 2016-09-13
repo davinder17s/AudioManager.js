@@ -20,13 +20,13 @@ filters | {} | {} | this is indexed value object, you can store any filter you w
 ##Events
 ---
 
-| Event | Description |
-|--|--|
-|onended | Called when audio is finished playing |
-|onupdated| Called after each interval, helps keeping timer updated |
-|onapplyfilters| Called when source is ready and you can attach your filters to it. |
-|onplay| Called when it starts playing |
-|onstop| Called when stop is fired |
+Event | Description 
+------|------
+onended | Called when audio is finished playing 
+onupdated | Called after each interval, helps keeping timer updated 
+onapplyfilters | Called when source is ready and you can attach your filters to it. 
+onplay | Called when it starts playing 
+onstop | Called when stop is fired 
 
 ##Usage examples
 
