@@ -28,9 +28,11 @@ Simplest WebAudio library
 |onplay| Called when it starts playing |
 |onstop| Called when stop is fired |
 
+##Usage examples
+
 ```html
 <input type="file" onchange="decodeIt(this)"/>
-```html
+```
 
 ```javascript
 // create new instance
@@ -84,4 +86,4 @@ $('body').on('drop', function(e){
     };
     fr.readAsArrayBuffer(file);
 });
-```javascript
+```
